@@ -14,5 +14,16 @@ navigation?.querySelectorAll('a').forEach((link) => {
   });
 });
 
+const videos = document.querySelectorAll('video');
+if ('IntersectionObserver' in window) {
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.play().catch(() => {});
+      else entry.target.pause();
+    });
+  }, { threshold: 0.45 });
+  videos.forEach((video) => videoObserver.observe(video));
+}
+
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
