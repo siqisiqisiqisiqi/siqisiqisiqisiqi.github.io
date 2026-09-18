@@ -3,147 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio of Siqi Zheng, a robotics Ph.D. candidate at Clemson University working in robot manipulation, embodied AI, and robot perception."
-    />
-    <title>Siqi Zheng | Robotics Ph.D. Candidate</title>
+    <meta name="description" content="Siqi Zheng is a robotics Ph.D. candidate focused on upper-limb manipulation, robot learning, vision-language-action models, and real-robot deployment." />
+    <meta name="theme-color" content="#fbfaf7" />
+    <title>Siqi Zheng | Robot Manipulation &amp; VLA</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="Siqi Zheng, home">SZ<span>.</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Open navigation</span>
-        <span></span><span></span>
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#publications">Publications</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open navigation</span><span></span><span></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <p class="eyebrow">Robotics · Embodied Intelligence</p>
+        <p class="eyebrow">Robot manipulation · Robot learning · VLA</p>
         <h1 id="hero-title">Siqi Zheng</h1>
         <p class="hero-role">Ph.D. Candidate at Clemson University</p>
-        <p class="hero-focus">Robot Manipulation <span>·</span> Embodied AI <span>·</span> Robot Perception</p>
+        <p class="hero-summary">I build real-robot manipulation systems—from teleoperation and data collection to policy training, deployment, and evaluation. My current work focuses on humanoid upper-limb manipulation and vision-language-action models.</p>
         <div class="hero-links" aria-label="Professional links">
-          <a class="primary-link placeholder-link" href="#" aria-disabled="true">Resume <span aria-hidden="true">↗</span></a>
-          <a class="placeholder-link" href="#" aria-disabled="true">GitHub <span aria-hidden="true">↗</span></a>
-          <a class="placeholder-link" href="#" aria-disabled="true">LinkedIn <span aria-hidden="true">↗</span></a>
-          <a class="placeholder-link" href="#" aria-disabled="true">Google Scholar <span aria-hidden="true">↗</span></a>
-          <a class="placeholder-link" href="#" aria-disabled="true">Email <span aria-hidden="true">↗</span></a>
+          <a class="primary-link" href="assets/Siqi_Zheng_Resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/siqisiqisiqisiqi" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="mailto:szheng2@g.clemson.edu">Email <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="placeholder-note">Professional links will be added soon.</p>
+        <ul class="capability-line" aria-label="Core capabilities"><li>Upper-limb manipulation</li><li>Teleoperation &amp; data</li><li>ACT / π0 / SmolVLA</li><li>Real-robot deployment</li></ul>
       </section>
 
-      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="section-number">01</p>
-          <div><p class="eyebrow">Featured work</p><h2 id="projects-title">Selected Projects</h2></div>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="video-frame">
-              <video autoplay loop muted playsinline aria-label="Humanoid VLA Manipulation demo video placeholder"></video>
-              <div class="video-placeholder"><span class="play-icon" aria-hidden="true">▶</span><span>Demo video to be added</span></div>
-            </div>
-            <div class="project-copy">
-              <p class="project-index">Project 01</p>
-              <h3>Humanoid VLA Manipulation</h3>
-              <p>Project description will be added soon.</p>
-              <div class="project-links">
-                <span>Project · Soon</span><span>Paper · Soon</span><span>Video · Soon</span>
-              </div>
-            </div>
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section-heading"><p class="section-number">01</p><div><p class="eyebrow">Selected work</p><h2 id="projects-title">Real robots, end to end</h2></div></div>
+        <div class="project-list">
+          <article class="project-card featured">
+            <div class="project-meta"><span>Featured</span><span>Humanoid · Real robot</span></div>
+            <div class="project-copy"><div><p class="project-index">01 / System ownership</p><h3>Humanoid Upper-Limb VLA System</h3></div><div><p>Built the initial upper-limb manipulation stack for a humanoid robot, spanning VR teleoperation, demonstration collection, dataset construction, policy training, and on-robot inference.</p><ul><li>Developed the upper-limb inverse-kinematics solver and VR teleoperation interface.</li><li>Deployed and evaluated π0, ACT, and SmolVLA on bottle placement, pouring, and tissue retrieval tasks.</li></ul></div></div>
+            <div class="tag-row"><span>ROS 2</span><span>PyTorch</span><span>Teleoperation</span><span>Imitation Learning</span><span>Deployment</span></div>
           </article>
 
           <article class="project-card">
-            <div class="video-frame">
-              <video autoplay loop muted playsinline aria-label="Occlusion-Aware Green Onion Manipulation demo video placeholder"></video>
-              <div class="video-placeholder"><span class="play-icon" aria-hidden="true">▶</span><span>Demo video to be added</span></div>
-            </div>
-            <div class="project-copy">
-              <p class="project-index">Project 02</p>
-              <h3>Occlusion-Aware Green Onion Manipulation</h3>
-              <p>Project description will be added soon.</p>
-              <div class="project-links">
-                <span>Project · Soon</span><span>Paper · Soon</span><span>Video · Soon</span>
-              </div>
-            </div>
+            <div class="project-meta"><span>Research</span><span>RA-L submission · Real + simulation</span></div>
+            <div class="project-copy"><div><p class="project-index">02 / VLA research</p><h3>Semantic-Guided Action Grounding for VLA Manipulation</h3></div><div><p>Proposed SGA-VLA to reduce visual shortcuts and instruction–action mismatch when fine-tuning VLA policies with limited robot data.</p><ul><li>Combined target-aware visual token replacement, phase-aware attention bias, and attention supervision.</li><li>Ran controlled comparisons and ablations on a real humanoid robot and in RoboTwin 2.0.</li></ul></div></div>
+            <div class="tag-row"><span>π0</span><span>VLA</span><span>Visual grounding</span><span>Ablation studies</span></div>
           </article>
 
-          <article class="project-card">
-            <div class="video-frame">
-              <video autoplay loop muted playsinline aria-label="High-Speed Peach Packaging demo video placeholder"></video>
-              <div class="video-placeholder"><span class="play-icon" aria-hidden="true">▶</span><span>Demo video to be added</span></div>
-            </div>
-            <div class="project-copy">
-              <p class="project-index">Project 03</p>
-              <h3>High-Speed Peach Packaging</h3>
-              <p>Project description will be added soon.</p>
-              <div class="project-links">
-                <span>Project · Soon</span><span>Paper · Soon</span><span>Video · Soon</span>
-              </div>
-            </div>
+          <article class="project-card compact-card">
+            <div class="project-meta"><span>Manipulation</span><span>UR10e · RGB-D</span></div>
+            <div class="project-copy"><div><p class="project-index">03 / Perception to action</p><h3>Occlusion-Aware Robotic Picking</h3></div><div><p>Built a perception-guided picking system for densely occluded objects, integrating instance segmentation, 3D point clouds, grasp prioritization, and adaptive push-before-grasp behavior.</p></div></div>
+            <div class="tag-row"><span>YOLO</span><span>Instance segmentation</span><span>Point clouds</span><span>Grasp planning</span></div>
           </article>
 
-          <article class="project-card">
-            <div class="video-frame">
-              <video autoplay loop muted playsinline aria-label="Autonomous Tractor-Trailer Navigation demo video placeholder"></video>
-              <div class="video-placeholder"><span class="play-icon" aria-hidden="true">▶</span><span>Demo video to be added</span></div>
-            </div>
-            <div class="project-copy">
-              <p class="project-index">Project 04</p>
-              <h3>Autonomous Tractor-Trailer Navigation</h3>
-              <p>Project description will be added soon.</p>
-              <div class="project-links">
-                <span>Project · Soon</span><span>Paper · Soon</span><span>Video · Soon</span>
-              </div>
-            </div>
+          <article class="project-card compact-card">
+            <div class="project-meta"><span>Dynamic manipulation</span><span>Delta robot · RGB-D</span></div>
+            <div class="project-copy"><div><p class="project-index">04 / Integrated automation</p><h3>High-Speed Dynamic Picking &amp; Packaging</h3></div><div><p>Integrated perception, 3D localization, robot communication, conveyor tracking, grasping, and automated packaging into a complete real-robot system.</p></div></div>
+            <div class="tag-row"><span>ROS</span><span>3D vision</span><span>Motion prediction</span><span>System integration</span></div>
           </article>
         </div>
       </section>
 
-      <section id="skills" class="section split-section" aria-labelledby="skills-title">
-        <div class="section-heading compact"><p class="section-number">02</p><h2 id="skills-title">Research &amp;<br />Technical Skills</h2></div>
+      <section id="experience" class="section split-section" aria-labelledby="experience-title">
+        <div class="section-heading compact"><p class="section-number">02</p><div><p class="eyebrow">Profile</p><h2 id="experience-title">Research &amp;<br />engineering</h2></div></div>
         <div class="detail-list">
-          <div><h3>Research Areas</h3><p>Robot Manipulation · Embodied AI · Robot Perception</p></div>
-          <div><h3>Methods &amp; Tools</h3><p>Technical skills will be added soon.</p></div>
+          <div><p class="detail-label">Current role</p><h3>AI R&amp;D Lead, Robotics · Beijing Zhongyi Technology</h3><p>Leading early development of humanoid upper-limb manipulation and VLA capabilities in an industry–lab collaboration.</p><span>May 2025–Present</span></div>
+          <div><p class="detail-label">Focus</p><h3>Robot learning grounded in systems</h3><p>Robot manipulation · VLA · imitation learning · visual perception · teleoperation · real-robot evaluation</p></div>
+          <div><p class="detail-label">Tools</p><h3>From models to hardware</h3><p>Python · PyTorch · ROS / ROS 2 · MoveIt 2 · π0 · ACT · SmolVLA · YOLO · RGB-D / point clouds · robot kinematics</p></div>
         </div>
       </section>
 
       <section id="publications" class="section split-section" aria-labelledby="publications-title">
-        <div class="section-heading compact"><p class="section-number">03</p><h2 id="publications-title">Publications</h2></div>
-        <div class="empty-state"><p>Publication list will be added soon.</p><span>Google Scholar link forthcoming</span></div>
+        <div class="section-heading compact"><p class="section-number">03</p><div><p class="eyebrow">Selected</p><h2 id="publications-title">Publications</h2></div></div>
+        <ol class="publication-list">
+          <li><p><strong>Semantic-Guided Action Grounding for Vision-Language-Action Robotic Manipulation</strong></p><p>Siqi Zheng et al. · IEEE Robotics and Automation Letters · Under review</p></li>
+          <li><p><strong>An Occlusion-Aware Perception-Guided Robotic Framework for Clustered Green Onion Picking</strong></p><p>Siqi Zheng et al. · Engineering Applications of Artificial Intelligence · Under review</p></li>
+          <li><p><strong>Trailer-Referenced Autonomous Navigation of Agricultural Tractor–Trailer Systems</strong></p><p>Siqi Zheng et al. · Computers and Electronics in Agriculture · 2025 · Co-first author</p></li>
+          <li><p><strong>A Two-Layer Human-in-the-Loop Optimization Framework for Customizing Lower-Limb Exoskeleton Assistance</strong></p><p>Siqi Zheng and Ge Lv · IEEE Control Systems Letters</p></li>
+        </ol>
       </section>
 
       <section id="education" class="section split-section" aria-labelledby="education-title">
-        <div class="section-heading compact"><p class="section-number">04</p><h2 id="education-title">Education</h2></div>
-        <div class="education-item">
-          <div><h3>Clemson University</h3><p>Ph.D. Candidate</p></div>
-          <p class="muted">Additional details will be added soon.</p>
+        <div class="section-heading compact"><p class="section-number">04</p><div><p class="eyebrow">Background</p><h2 id="education-title">Education</h2></div></div>
+        <div class="education-list">
+          <div><div><h3>Clemson University</h3><p>Ph.D. Candidate, Automotive Engineering</p><p class="research-focus">Research focus: Embodied AI, robot manipulation, and VLA models</p></div><span>2021–Present</span></div>
+          <div><div><h3>University of Southern California</h3><p>M.S., Mechanical Engineering</p></div><span>2018–2020</span></div>
+          <div><div><h3>Dalian University of Technology</h3><p>B.E., Mechanical Engineering</p></div><span>2014–2018</span></div>
         </div>
       </section>
 
       <section id="contact" class="contact-section" aria-labelledby="contact-title">
-        <p class="eyebrow">Let’s connect</p>
-        <h2 id="contact-title">Interested in building intelligent robots?</h2>
-        <p>I’m open to industry opportunities in robotics, embodied AI, and related fields.</p>
-        <span class="contact-placeholder">Email address will be added soon.</span>
+        <p class="eyebrow">Contact</p><h2 id="contact-title">Building manipulation systems that work on real robots.</h2>
+        <p>I am exploring robotics and embodied-AI opportunities focused on manipulation, robot learning, VLA, and deployment.</p>
+        <a class="contact-link" href="mailto:szheng2@g.clemson.edu">szheng2@g.clemson.edu <span aria-hidden="true">↗</span></a>
       </section>
     </main>
-
-    <footer>
-      <p>© <span id="year"></span> Siqi Zheng</p>
-      <a href="#top">Back to top ↑</a>
-    </footer>
+    <footer><p>© <span id="year"></span> Siqi Zheng</p><a href="#top">Back to top ↑</a></footer>
   </body>
 </html>
