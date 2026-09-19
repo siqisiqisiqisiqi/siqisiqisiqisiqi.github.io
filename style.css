@@ -15,9 +15,10 @@ a { color:inherit; }
 .eyebrow { margin:0 0 14px; color:var(--accent); font-size:.72rem; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
 h1,h2,h3,p { margin-top:0; }
 .hero { padding:94px 0 78px; border-bottom:1px solid var(--line); }
-h1 { max-width:990px; margin-bottom:30px; font-size:clamp(3.1rem,7vw,6.1rem); font-weight:710; letter-spacing:-.068em; line-height:.96; }
-.hero-summary { max-width:790px; margin-bottom:18px; color:var(--muted); font-size:clamp(1.05rem,1.8vw,1.2rem); line-height:1.72; }
-.identity { margin-bottom:30px; color:#383e42; font-size:.85rem; font-weight:700; }
+h1 { max-width:990px; margin-bottom:12px; font-size:clamp(3.6rem,8vw,6.5rem); font-weight:710; letter-spacing:-.068em; line-height:.96; }
+.hero-role { margin-bottom:32px; color:#383e42; font-size:.9rem; font-weight:700; }
+.hero-statement { max-width:900px; margin-bottom:18px; font-size:clamp(1.8rem,4vw,3rem); font-weight:700; letter-spacing:-.045em; line-height:1.12; }
+.hero-summary { max-width:790px; margin-bottom:30px; color:var(--muted); font-size:clamp(1.05rem,1.8vw,1.2rem); line-height:1.72; }
 .hero-links { display:flex; flex-wrap:wrap; gap:10px; }
 .hero-links a,.contact-links a { display:inline-flex; align-items:center; gap:22px; min-height:44px; padding:9px 14px; border:1px solid var(--line); font-size:.82rem; font-weight:750; text-decoration:none; }
 .hero-links .primary-link { color:#fff; background:var(--ink); border-color:var(--ink); }
